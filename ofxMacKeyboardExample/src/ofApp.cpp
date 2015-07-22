@@ -13,7 +13,10 @@ public:
     }
     
     void draw() {
-        
+        ofBackground(ofColor::black);
+        ofSetColor(ofColor::white);
+        ofDrawBitmapString("s: start steal", 20, 40);
+        ofDrawBitmapString("S: stop steal", 20, 70);
     }
     
     void keyboardCallback(ofxMacKeyboardEventArg &arg) {
@@ -39,7 +42,7 @@ public:
 
 //========================================================================
 int main() {
-    ofSetupOpenGL(1280, 720, OF_WINDOW);
+    ofSetupOpenGL(200, 200, OF_WINDOW);
     ofRunApp(new ofApp());
     
 }
